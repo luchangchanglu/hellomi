@@ -1,0 +1,309 @@
+@charset 'utf-8';
+header {
+  border-bottom: 2px solid #ff6700;
+}
+header > .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header > .wrapper > .left {
+  padding: 20px 0px;
+}
+header > .wrapper > .left > .icon-icon-xiaomiguishu {
+  font-size: 55px;
+  float: left;
+  color: #ff6900;
+}
+header > .wrapper > .left > span:nth-last-child(1) {
+  float: left;
+  padding: 6px 0 0 50px;
+  font-size: 28px;
+}
+header > .wrapper > .right {
+  float: right;
+  padding: 36px 0px;
+}
+header > .wrapper > .right > a,
+header > .wrapper > .right span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+header > .wrapper > .right > a:hover {
+  color: #ff6900;
+}
+main {
+  background: #f5f5f5;
+  overflow: hidden;
+  padding: 38px 0;
+}
+main > .box1 > .wrapper {
+  padding-left: 300px;
+  margin: 65px 0 130px;
+  display: flex;
+  justify-content: start;
+}
+main > .box1 > .wrapper .left img {
+  margin-right: 70px;
+}
+main > .box1 > .wrapper .right > p:nth-child(1) {
+  font-size: 36px;
+  color: #b0b0b0;
+  margin: 70px 0 0 0;
+  font-weight: bolder;
+}
+main > .box1 > .wrapper .right > p:nth-child(2) {
+  font-size: 20px;
+  color: #b0b0b0;
+}
+main > .box1 > .wrapper .right > .btnbox {
+  margin: 10px;
+}
+main > .box1 > .wrapper .right > .btnbox > a {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+main > .box1 > .wrapper .right > .btnbox > a:nth-child(1) {
+  margin-right: 5px;
+  background-color: #ff6700;
+  color: white;
+}
+main > .box1 > .wrapper .right > .btnbox > a:nth-child(2) {
+  border: 1px solid #ff6700;
+  color: #ff6700;
+}
+main > .box2 > .wrapper > .top > h2 {
+  position: relative;
+  margin: 0;
+  height: 50px;
+  font-weight: 400;
+  color: #757575;
+  border-top: 1px solid #e0e0e0;
+  font-size: 30px;
+}
+main > .box2 > .wrapper > .top > h2 > span {
+  position: absolute;
+  top: -20px;
+  left: 372px;
+  height: 40px;
+  width: 482px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  background-color: #f5f5f5;
+}
+main > .box2 > .wrapper > .bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box {
+  float: left;
+  width: 234px;
+  height: 300px;
+  background-color: white;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a img {
+  width: 190px;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a p:nth-child(2) {
+  margin: 5px 10px 10px;
+  height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a p:nth-child(3) {
+  margin-bottom: 10px;
+  color: #ff6700;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a p:nth-child(4) {
+  margin-top: 12px;
+  position: relative;
+  color: #757575;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a p:nth-child(4) > .join {
+  display: block;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  transition: 500ms;
+  border: 1px solid #ff6900;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a p:nth-child(4) > .join:hover {
+  background-color: #ff6900;
+  color: white;
+}
+main > .box2 > .wrapper > .bottom .wrapper .box a:hover p:nth-child(4) > .join {
+  top: -5px;
+}
+footer > .wrapper > .top {
+  padding: 37px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer > .wrapper > .top > ul > li {
+  float: left;
+  width: 19.8%;
+  height: 25px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  transition: 0.2s;
+}
+footer > .wrapper > .top > ul > li:hover {
+  color: orange;
+}
+footer > .wrapper > .top > ul > li > a {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+footer > .wrapper > .top > ul > li > a:hover {
+  color: orange;
+}
+footer > .wrapper > .top span {
+  font-size: 20px;
+}
+footer > .wrapper > .bottom {
+  margin: 10px 0;
+}
+footer > .wrapper > .bottom > .left {
+  border-right: 1px solid #757575;
+}
+footer > .wrapper > .bottom > .left > ul {
+  float: left;
+  width: 160px;
+  margin: 0;
+}
+footer > .wrapper > .bottom > .left li {
+  font-size: 10px;
+  color: #757575;
+  margin: 5px 0px;
+}
+footer > .wrapper > .bottom > .left .title {
+  font-size: 18px;
+}
+footer > .wrapper > .bottom > .left a {
+  color: #757575;
+}
+footer > .wrapper > .bottom > .left a:hover {
+  color: orange;
+}
+footer > .wrapper > .bottom > .right {
+  text-align: center;
+}
+footer > .wrapper > .bottom > .right .phone {
+  font-size: 22px;
+  line-height: 1;
+  display: block;
+  color: #ff6700;
+}
+footer > .wrapper > .bottom > .right .tm {
+  font-size: 12px;
+}
+footer > .wrapper > .bottom > .right .command {
+  border-color: #ff6700;
+  background: #fff;
+  color: #ff6700;
+  display: inline-block;
+  width: 158px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  color: #b0b0b0;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+footer > .wrapper > .bottom > .right .command:hover {
+  color: #fff;
+  background-color: #f25807;
+  border-color: #f25807;
+}
+footer > .wrapper > .bottom > .right .gz {
+  font-size: 12px;
+  margin-top: 10px;
+}
+footer > .wrapper > .bottom > .right .gz .wb {
+  font-size: 20px;
+}
+footer > .wrapper > .bottom > .right .gz .wb:hover {
+  color: #f25807;
+  cursor: pointer;
+}
+footer > .wrapper > .bottom > .right .gz .vx {
+  font-size: 20px;
+}
+footer > .wrapper > .bottom > .right .gz .vx:hover {
+  cursor: pointer;
+  color: #f25807;
+  font-size: 20px;
+}
+footer > .wrapper > .bottom > .right .gz .vx:hover ~ .vxp {
+  display: block;
+}
+footer > .wrapper > .bottom > .right .vxp {
+  position: absolute;
+  right: 200px;
+  display: none;
+}
+#bottom {
+  padding: 30px 0;
+  font-size: 12px;
+  background: #fafafa;
+}
+#bottom .milogo {
+  color: #f25807;
+}
+#bottom .icon-icon-xiaomiguishu {
+  font-size: 55px;
+}
+#bottom .wrapper {
+  display: flex;
+}
+#bottom .wrapper .milogo {
+  margin-right: 15px;
+}
+#bottom .wrapper .text1 {
+  width: 1000px;
+}
+#bottom .wrapper .text1 a {
+  color: #757575;
+}
+#bottom .wrapper .text1 a:hover {
+  color: #f25807;
+}
+#bottom .wrapper .text .text2 {
+  margin-bottom: 50px;
+}
+#bottom .wrapper .text .text2 p {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+#bottom .wrapper .text .text2 p a {
+  color: #b0b0b0;
+}
+#bottom .wrapper .text .text2 p a:hover {
+  color: #f25807;
+}
+#bottom .wrapper .heikeji {
+  width: 368px;
+  height: 21px;
+  margin: 0 auto;
+}

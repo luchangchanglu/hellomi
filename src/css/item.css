@@ -11,6 +11,9 @@ header > .head > .wrapper > a {
   color: #b0b0b0;
   cursor: pointer;
 }
+header > .head > .wrapper > a:hover {
+  color: white;
+}
 header > .head > .wrapper > span {
   float: left;
   margin: 0 0.3rem;
@@ -32,22 +35,9 @@ header > .head > .wrapper .shopping {
   line-height: 40px;
   position: relative;
 }
-header > .head > .wrapper .shopping > a {
-  color: #b0b0b0;
-}
-header > .head > .wrapper .shopping > a > span {
+header > .head > .wrapper .shopping > span {
   margin-right: 5px;
   font-size: 18px;
-}
-header > .head > .wrapper .shopping:hover {
-  background-color: white;
-  color: #ff6700;
-}
-header > .head > .wrapper .shopping:hover > a {
-  color: #ff6700;
-}
-header > .head > .wrapper > a:hover {
-  color: white;
 }
 header > .head2 {
   height: 100px;
@@ -69,7 +59,14 @@ header > .head2 > .wrapper > .daohan {
 }
 header > .head2 > .wrapper > .daohan > a {
   margin-right: 10px;
-  color: black;
+}
+header > .head2 > .wrapper > .daohan > a:hover {
+  color: #f69000;
+}
+header > .head2 > .wrapper > .daohan > a:hover > .erji {
+  height: 220px;
+  top: 101px;
+  transition-duration: 0.5s;
 }
 header > .head2 > .wrapper > .daohan > .xbk {
   margin-right: 10px;
@@ -92,7 +89,7 @@ header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul {
   justify-content: space-between;
 }
 header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul > li {
-  padding: 10px 30px 0px 30px ;
+  padding: 10px 30px 0px 30px;
   text-align: center;
 }
 header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul > li > img {
@@ -103,25 +100,13 @@ header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul > li > span 
   display: block;
   height: 25px;
   font-size: 12px;
-  color: black;
   line-height: 25px;
-}
-header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul > li > span:nth-last-child(1) {
-  color: #ff6700;
 }
 header > .head2 > .wrapper > .daohan > .xbk > .erji > .wrapper > ul > .fgx {
   height: 120px;
   padding: 0px;
   margin-top: 10px;
   border-right: 1px solid #bbb;
-}
-header > .head2 > .wrapper > .daohan > a:hover > .erji {
-  height: 220px;
-  top: 101px;
-  transition-duration: 0.5s;
-}
-header > .head2 > .wrapper > .daohan > a:hover {
-  color: #f69000;
 }
 header > .head2 > .wrapper > .shousuo {
   float: left;
@@ -130,13 +115,6 @@ header > .head2 > .wrapper > .shousuo {
 }
 header > .head2 > .wrapper > .shousuo > input {
   border: 1px solid #e1e1e1;
-}
-header > .head2 > .wrapper > .shousuo > #seekbox {
-  float: left;
-  height: 60px;
-  width: 240px;
-  padding-left: 15px;
-  line-height: 65px;
 }
 header > .head2 > .wrapper > .shousuo > input:nth-child(2) {
   height: 62px;
@@ -147,6 +125,13 @@ header > .head2 > .wrapper > .shousuo > input:nth-child(2) {
   line-height: 65px;
   border-left: 0px;
   cursor: pointer;
+}
+header > .head2 > .wrapper > .shousuo > #seekbox {
+  float: left;
+  height: 60px;
+  width: 240px;
+  padding-left: 15px;
+  line-height: 65px;
 }
 header > .head2 > .wrapper > .shousuo > div {
   position: absolute;
@@ -349,251 +334,252 @@ header > #banner .wrapper #big_banner_wrap #big_banner_change_wrap #big_banner_c
   text-align: center;
   font-family: "宋体";
 }
-header > .head3 {
-  padding: 10px 0px 20px 0px;
-}
-header > .head3 > .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-header > .head3 > .wrapper > .box1 {
-  width: 250px;
-  height: 150px;
-  background: #5f5750;
-}
-header > .head3 > .wrapper > .box1 > .box {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 10px 0px;
-}
-header > .head3 > .wrapper > .box1 > .box > .img1::before {
-  position: absolute;
-  content: "";
-  background: #665e57;
-  top: -1px;
-  left: 16px;
-  width: 60px;
-  height: 1px;
-}
-header > .head3 > .wrapper > .box1 > .box > .img2::after {
-  position: absolute;
-  content: "";
-  background: #665e57;
-  top: 6px;
-  left: 0;
-  width: 1px;
-  height: 50px;
-}
-header > .head3 > .wrapper > .box1 > .box > .img {
-  position: relative;
-  width: 65px;
-  padding: 0px 10px;
-  padding-top: 10px;
-  text-align: center;
-  color: #fff;
-  opacity: 0.7;
-  transition: 0.5s;
-}
-header > .head3 > .wrapper > .box1 > .box > .img > .iconfont {
-  display: block;
-  width: 80px;
-  font-size: 22px;
-}
-header > .head3 > .wrapper > .box1 > .box > .img > p {
-  font-size: 12px;
-  padding-left: 12px;
-}
-header > .head3 > .wrapper > .box1 > .box > .img:hover {
-  opacity: 1;
-}
-header > .head3 > .wrapper > .box2 {
-  width: 310px;
-  height: 150px;
-  background-color: red;
-  transition: 0.5s;
-}
-header > .head3 > .wrapper > .box2 > a > img {
+main > .title {
   width: 100%;
-  height: 100%;
+  height: 63px;
+  color: #616161;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
 }
-header > .head3 > .wrapper > .box2:hover {
-  box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.2);
+main > .title > .wrapper {
+  width: 1200px;
 }
-main {
-  background: #f5f5f5;
-  padding: 30px 0px;
-}
-main > .box1 .wrapper {
-  cursor: pointer;
-}
-main > .box1 .wrapper > img {
-  width: 100%;
-}
-main > .box2 {
-  padding: 20px 0px;
-}
-main > .box2 > .top {
-  padding: 10px 0px;
-}
-main > .box2 > .top .wrapper {
-  padding: 10px 0px;
-}
-main > .box2 > .top .wrapper > h2 {
-  font-size: 22px;
+main > .title > .wrapper .left {
+  font-size: 20px;
+  line-height: 63px;
   float: left;
 }
-main > .box2 > .top .wrapper > div {
+main > .title > .wrapper .right {
   float: right;
+  line-height: 63px;
+}
+main > .title > .wrapper .right a {
+  color: #757575;
+}
+main > .title > .wrapper .right a:hover {
+  color: #ff6700;
+}
+main .main1 {
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+main .main1 .wrapper {
+  display: flex;
+}
+main .main1 .wrapper .left {
+  width: 560px;
+  position: relative;
+}
+main .main1 .wrapper .left > img {
+  width: 560px;
+  height: 560px;
+}
+main .main1 .wrapper .left .leftbuttom {
+  position: absolute;
+  top: 50%;
+  width: 41px;
+  height: 69px;
+  margin-top: -35px;
   cursor: pointer;
-  padding-top: 5px;
+  background: url(../img/icon-slides.png) no-repeat -84px 50%;
+  left: 0;
+  right: auto;
 }
-main > .box2 > .top .wrapper > div > a {
-  color: black;
+main .main1 .wrapper .left .leftbuttom:hover {
+  background-position: 0 50%;
 }
-main > .box2 > .top .wrapper > div > a > span:nth-child(1) {
-  padding-right: 3px;
+main .main1 .wrapper .left .rightbuttom {
+  position: absolute;
+  top: 50%;
+  width: 41px;
+  height: 69px;
+  margin-top: -35px;
+  cursor: pointer;
+  background: url(../img/icon-slides.png) no-repeat -125px 50%;
+  right: 0;
+  left: auto;
 }
-main > .box2 > .top .wrapper > div > a > .icon-youjiantou3 {
-  font-size: 20px;
-  color: #b4b4b4;
+main .main1 .wrapper .left .rightbuttom:hover {
+  background-position: -42px 50%;
 }
-main > .box2 > .top .wrapper > div > a:hover {
-  color: #f69000;
-}
-main > .box2 > .top .wrapper > div > a:hover > .icon-youjiantou3 {
-  color: #f69000;
-}
-main > .box2 > .bottom {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-main > .box2 > .bottom > .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-main > .box2 > .bottom > .wrapper > .left {
-  width: 220px;
-  height: 600px;
-}
-main > .box2 > .bottom > .wrapper > .left > .box1 > a > img {
-  width: 100%;
-  height: 600px;
-}
-main > .box2 > .bottom > .wrapper > .right {
-  width: 970px;
-}
-main > .box2 > .bottom > .wrapper > .right > .box {
-  display: flex;
-  justify-content: space-between;
-}
-main > .box2 > .bottom > .wrapper > .right > .box > a {
-  display: block;
-  width: 220px;
-  height: 288px;
-  background-color: #fff;
+main .main1 .wrapper .left .jindutiao {
+  position: absolute;
   text-align: center;
+  width: 550px;
+  bottom: 50px;
 }
-main > .box2 > .bottom > .wrapper > .right > .box > a > img {
-  width: 190px;
-}
-main > .box2 > .bottom > .wrapper > .right > .box > a > p:nth-child(2) {
-  color: #333;
-  font-size: 13px;
-  font-weight: 500;
-  margin-bottom: 3px;
-}
-main > .box2 > .bottom > .wrapper > .right > .box > a > p:nth-child(3) {
-  height: 18px;
-  font-size: 12px;
-  color: #b0b0b0;
-}
-main > .box2 > .bottom > .wrapper > .right > .box > a > p:nth-child(4) {
-  margin: 10px 0px;
-  color: #ff6700;
-  font-size: 15px;
-}
-main > .box2 > .bottom > .wrapper > .right > .box1 {
-  margin-bottom: 25px;
-}
-main > .box3 > .top > .wrapper > div > h2 {
+main .main1 .wrapper .left .jindutiao span {
+  cursor: pointer;
   display: inline-block;
-  margin-left: 10px;
-  line-height: 30px;
+  background: #ccc;
+  width: 50px;
+  border-radius: 0;
+  border: 0;
+  height: 3px;
 }
-main > .box3 > .top > .wrapper > div > .active {
+main .main1 .wrapper .right {
+  margin-left: 20px;
+}
+main .main1 .wrapper .right > .title {
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+main .main1 .wrapper .right > .title p {
   color: #ff6700;
-  border-bottom: 3px solid #ff6700;
+  line-height: 1.5;
+  padding-top: 8px;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two {
-  width: 220px;
-  height: 288px;
+main .main1 .wrapper .right > .title p:last-child {
+  font-size: 18px;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a {
-  display: block;
-  width: 100%;
-  height: 135px;
-  background-color: #fff;
+main .main1 .wrapper .right > .title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) > div {
-  padding: 20px 0px;
-}
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) > div > p:nth-child(1),
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) > div p:nth-child(2) {
-  color: #333;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 3px;
-}
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) > div > p:nth-child(3) {
-  margin: 10px 0px;
-  color: #ff6700;
-  font-size: 15px;
-}
-main > .box3 > .bottom > .wrapper > .right > .box > .two > a:nth-child(1) > img {
+main .main1 .wrapper .right .dinwei {
+  margin: 20px 0;
   margin-top: 25px;
-  width: 80px;
-  height: 80px;
+  padding: 30px 50px;
+  position: relative;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > .llgd {
+main .main1 .wrapper .right .dinwei a {
+  color: #ff6700;
+}
+main .main1 .wrapper .right .select {
+  height: 100px;
+  margin-bottom: 10px;
+}
+main .main1 .wrapper .right .select > .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .main1 .wrapper .right .select > ul > li {
+  margin-right: 12px;
+  margin-top: 10px;
+  line-height: 42px;
+  height: 42px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  list-style: none;
+  cursor: pointer;
+  width: 292px;
+  font-size: 16px;
+  text-align: center;
+  color: #757575;
+  float: left;
+  transition: 0.5s;
+}
+main .main1 .wrapper .right .select > ul > li:hover {
+  border-color: #FF6700;
+}
+main .main1 .wrapper .right .select > ul > li a {
+  color: #757575;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 5px;
+  transition: 0.5s;
+}
+main .main1 .wrapper .right .select > ul > li a:hover {
+  color: #FF6700;
+}
+main .main1 .wrapper .right .select > ul > .active {
+  color: #FF6700;
+  border-color: #FF6700;
+}
+main .main1 .wrapper .right .select > ul > .active a {
+  color: #FF6700;
+}
+main .main1 .wrapper .right .myselect {
+  background: #f9f9fa;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+main .main1 .wrapper .right .myselect .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > .llgd > div {
-  padding: 35px 0px;
+main .main1 .wrapper .right .buttom {
+  color: #ff6700;
+  font-size: 24px;
+  padding-top: 20px;
+  display: flex;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > .llgd > div > p:nth-child(1) {
-  color: #333;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 3px;
+main .main1 .wrapper .right .buttom .buy {
+  width: 298px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  background-color: #FF6700;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > .llgd > div > p:nth-child(2) {
-  height: 18px;
-  font-size: 15px;
+main .main1 .wrapper .right .buttom .buy:hover {
+  background-color: #f25807;
+  border-color: #f25807;
+}
+main .main1 .wrapper .right .buttom .buy a {
+  color: #fff;
+}
+main .main1 .wrapper .right .buttom .like {
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 140px;
+  height: 52px;
+  line-height: 52px;
+  background: #b0b0b0;
+  transition: 1s;
+}
+main .main1 .wrapper .right .buttom .like:hover {
+  background-color: #757575;
+  border-color: #757575;
+}
+main .main1 .wrapper .right .buttom .like a {
+  color: #fff;
+}
+main .main1 .wrapper .right .buttom .like span {
+  font-size: 22px;
+  color: white;
+}
+main .main1 .wrapper .right .explain {
+  width: 550px;
+  margin-top: 10px;
+}
+main .main1 .wrapper .right .explain span {
+  font-size: 16px;
   color: #b0b0b0;
 }
-main > .box3 > .bottom > .wrapper > .right > .box > .two > .llgd > span {
-  margin-top: 35px;
-  font-size: 55px;
-  color: #ff6700;
+main .main2 {
+  background-color: #f5f5f5;
 }
-main > .box4 > .bottom > .wrapper > .left > .box1 {
-  width: 220px;
-  height: 288px;
+main .main2 .wrapper .imgbox {
+  background-color: #f5f5f5;
 }
-main > .box4 > .bottom > .wrapper > .left > .box1 > a > img {
-  width: 220px;
-  height: 288px;
+main .main2 .wrapper .imgbox p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1em 0;
 }
-main > .box4 > .bottom > .wrapper > .left > .box1 {
-  margin-bottom: 25px;
+main .main2 .wrapper .imgbox .box7 img {
+  width: 100%;
+}
+main .main2 .wrapper .imgbox .box8 img {
+  width: 100%;
+  padding-bottom: 20px;
 }
 footer > .wrapper > .top {
   padding: 37px 0;

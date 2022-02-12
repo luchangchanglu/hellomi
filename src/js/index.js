@@ -83,3 +83,20 @@ $(function(){
         img_change();
     })
 })
+window.onscroll=function(){
+    let gohome=document.querySelector('.gogo');
+    if(document.documentElement.scrollTop>=500){
+        
+        gohome.style.display='flex';
+
+    }else{
+        gohome.style.display='none';
+    }
+}
+
+
+    
+    $('.yiru').hover(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    })
