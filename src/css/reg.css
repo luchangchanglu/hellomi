@@ -101,7 +101,7 @@
   color: dimgray;
   font-weight: 500;
 }
-.rightbox > .box2 > #bg > div >.terseInput .terseInput_span_state_up {
+.rightbox > .box2 > #bg > div > .terseInput .terseInput_span_state_up {
   font-size: 12px;
   top: 13%;
   left: 3.5%;
@@ -168,7 +168,7 @@
     left: 3.5%;
   }
 }
-.rightbox > .box2 > #bg > div > button {
+.rightbox > .box2 > #bg > div > #btn {
   margin: 5px 0px;
   width: 282px;
   height: 50px;

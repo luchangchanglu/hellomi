@@ -37,7 +37,7 @@ $('#password').click(function(){
 $('#password>.terseInput_inputDiv>.terseInput_input').focusout(function(){
     
     if($('#password>.terseInput_inputDiv>.terseInput_input').val() == ""){
-        $('#username>.terseInput_inputDiv').css("display","none");
+        $('#password>.terseInput_inputDiv').css("display","none");
         $('#password>.terseInput_span').removeClass("terseInput_span_animat_up")
         $('#password>.terseInput_span').addClass("terseInput_span_animat_down")
     };  

@@ -39,7 +39,7 @@
   $password = $_REQUEST['password'];
 
   // 3. 查询数据
-  $sql = "select * from user where username='$username' and password='$password'";
+  $sql = "select * from users where username='$username' and password='$password'";
   
   $results = $mysql->query($sql);
 
