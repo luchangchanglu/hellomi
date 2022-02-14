@@ -32,13 +32,14 @@
                 <a href="./login.html"><span class="active">登录</span></a>
                 <a href="./reg.html"><span >注册</span></a>
             </div>
-            <div>
+            <form action="../interface/login.php" method="get">
+            <!-- <div>
                 <div class="terseInput " state="normal" ok="false" id="username" style="width: 80%; margin-top: 8%;">
                     <div class="terseInput_span terseInput_span_state_down" >
                         用户名
                     </div>
                     <div class="terseInput_inputDiv ">
-                        <input class="terseInput_input">
+                        <input class="terseInput_input" id="username1" name="username">
                     </div>
                     <div class="terseInput_icon_err" title="" style="display: none">
                     </div>
@@ -51,21 +52,44 @@
                         密码
                     </div>
                     <div class="terseInput_inputDiv ">
-                        <input class="terseInput_input">
+                        <input class="terseInput_input" id="password1" name="password">
+                    </div>
+                    <div class="terseInput_icon_err" title="" style="display: none">
+                    </div>
+                </div>
+            </div> -->
+            <div>
+                <div class="terseInput " state="normal" ok="false" id="username" style="width: 80%; margin-top: 8%;">
+                    <div class="terseInput_span terseInput_span_state_down" >
+                        用户名
+                    </div>
+                    <div class="terseInput_inputDiv ">
+                        <input class="terseInput_input" name="username">
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <div class="terseInput " state="normal" ok="false" id="password" style="width: 80%">
+                    <div class="terseInput_span terseInput_span_state_down">
+                        密码
+                    </div>
+                    <div class="terseInput_inputDiv ">
+                        <input class="terseInput_input" name="password">
                     </div>
                     <div class="terseInput_icon_err" title="" style="display: none">
                     </div>
                 </div>
             </div>
             <div>
-                <input type="button" value="">
-                <button  id="but">登录</button>
-            </div>
+                <input type="submit">登录</input>
+            </div></form>
         </div>
         <div class="box3">
             小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号
         </div>
     </div>
 </body>
+<script src="./js/jquery.js"></script>
 <script src="./js/reg.js"></script>
 </html>

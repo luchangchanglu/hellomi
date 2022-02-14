@@ -70,7 +70,7 @@
   color: #f69000;
   border-bottom: 3px solid #f69000;
 }
-.rightbox > .box2 > div > .terseInput {
+.rightbox > .box2 > form > div > .terseInput {
   margin: 5px 0px;
   /*width: 30%;*/
   height: 3.3Rem;
@@ -81,15 +81,15 @@
   position: relative;
   cursor: text;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_state_action {
+.rightbox > .box2 > form > div > .terseInput .terseInput_state_action {
   border: 1px solid #0070c9;
   box-shadow: 0 0 0 3px rgba(131, 192, 253, 0.5);
 }
-.rightbox > .box2 > div > .terseInput .terseInput_state_err {
+.rightbox > .box2 > form > div > .terseInput .terseInput_state_err {
   border: 1px solid #de071c;
   background-color: #fef0f0;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_span {
+.rightbox > .box2 > form > div > .terseInput .terseInput_span {
   max-width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -101,31 +101,31 @@
   color: dimgray;
   font-weight: 500;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_span_state_up {
+.rightbox > .box2 > form > div > .terseInput .terseInput_span_state_up {
   font-size: 12px;
   top: 13%;
   left: 3.5%;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_span_state_down {
+.rightbox > .box2 > form > div > .terseInput .terseInput_span_state_down {
   font-size: 16px;
   top: 29.5%;
   left: 5.5%;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_span_animat_up {
+.rightbox > .box2 > form > div > .terseInput .terseInput_span_animat_up {
   animation: terseInput_span_animat_up 0.3s ease-out;
   animation-fill-mode: forwards;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_span_animat_down {
+.rightbox > .box2 > form > div > .terseInput .terseInput_span_animat_down {
   animation: terseInput_span_animat_down 0.3s ease-out;
   animation-fill-mode: forwards;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_inputDiv {
+.rightbox > .box2 > form > div > .terseInput .terseInput_inputDiv {
   margin-top: 0.3rem;
   margin-left: 0.5rem;
   width: 93%;
   height: 1.8rem;
 }
-.rightbox > .box2 > div > .terseInput .terseInput_input {
+.rightbox > .box2 > form > div > .terseInput .terseInput_input {
   outline: none;
   width: 100%;
   height: 100%;
@@ -133,7 +133,7 @@
   font-size: 15px;
   background-color: rgba(0, 0, 0, 0);
 }
-.rightbox > .box2 > div > .terseInput .terseInput_icon_err {
+.rightbox > .box2 > form > div > .terseInput .terseInput_icon_err {
   margin-top: 10px;
   height: 17.5px;
   background-image: url("err.svg");
@@ -168,7 +168,7 @@
     left: 3.5%;
   }
 }
-.rightbox > .box2 > div > button {
+.rightbox > .box2 > form > div > button {
   margin: 5px 0px;
   width: 282px;
   height: 50px;

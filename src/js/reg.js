@@ -14,30 +14,31 @@ window.onload = function(){
 }
 
 $('#username').click(function(){
-    $('#username>.terseInput_span').removeClass("terseInput_span_animat_down")
-    $('#username>.terseInput_span').addClass("terseInput_span_animat_up")
-    terseInput_inputDiv.style.display="block";
+    $('#username>.terseInput_span').removeClass("terseInput_span_animat_down");
+    $('#username>.terseInput_span').addClass("terseInput_span_animat_up");
+    $('#username>.terseInput_inputDiv').css("display","block");
     $('#username>.terseInput_inputDiv>.terseInput_input').focus();
 });
 $('#username>.terseInput_inputDiv>.terseInput_input').focusout(function(){
     
-    if($('.terseInput_input').val() == ""){
+    if($('#username>.terseInput_inputDiv>.terseInput_input').val() == ""){
         $('#username>.terseInput_span').removeClass("terseInput_span_animat_up")
         $('#username>.terseInput_span').addClass("terseInput_span_animat_down")
+        $('#username>.terseInput_inputDiv').css("display","none");
     }
     
 })
 $('#password').click(function(){
     $('#password>.terseInput_span').removeClass("terseInput_span_animat_down")
     $('#password>.terseInput_span').addClass("terseInput_span_animat_up")
-    terseInput_inputDiv.style.display="block";
+    $('#password>.terseInput_inputDiv').css("display","block");
     $('#password>.terseInput_inputDiv>.terseInput_input').focus();
 });
 $('#password>.terseInput_inputDiv>.terseInput_input').focusout(function(){
     
-    if($('.terseInput_input').val() == ""){
+    if($('#password>.terseInput_inputDiv>.terseInput_input').val() == ""){
+        $('#username>.terseInput_inputDiv').css("display","none");
         $('#password>.terseInput_span').removeClass("terseInput_span_animat_up")
         $('#password>.terseInput_span').addClass("terseInput_span_animat_down")
-    }
-    
-})
+    };  
+});
